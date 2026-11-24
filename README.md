@@ -11,7 +11,30 @@ To build and deploy a cloud-based application using AWS services.
 - AWS Budgets
 
 ## Project Architecture
-To be updated.
+
+                    CUSTOMER
+                       |
+                       v
+                  CLOUDFRONT
+                       |
+                       v
+                    AMAZON S3
+                 (Website hosting)
+                       |
+                       v
+                  API GATEWAY
+                       |
+                       v
+                 AWS LAMBDA
+              (Application logic)
+                       |
+                       v
+                  DYNAMODB
+             (Complaint database)
+
+        IAM - Access and permissions
+        CLOUDWATCH - Logs and monitoring
+
 
 ## Implementation Steps
 1. Configure AWS IAM.
@@ -20,8 +43,6 @@ To be updated.
 4. Deploy the application.
 5. Configure monitoring and alerts.
 
-## Screenshots
-Screenshots will be added here.
 
 ## Monthly Budget
 $5 USD
