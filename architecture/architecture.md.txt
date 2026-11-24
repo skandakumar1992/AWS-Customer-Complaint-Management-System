@@ -1,0 +1,23 @@
+
+                    CUSTOMER
+                       |
+                       v
+                  CLOUDFRONT
+                       |
+                       v
+                    AMAZON S3
+                 (Website hosting)
+                       |
+                       v
+                  API GATEWAY
+                       |
+                       v
+                 AWS LAMBDA
+              (Application logic)
+                       |
+                       v
+                  DYNAMODB
+             (Complaint database)
+
+        IAM - Access and permissions
+        CLOUDWATCH - Logs and monitoring
